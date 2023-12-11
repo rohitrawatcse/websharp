@@ -18,3 +18,23 @@ console.log(headerTitle)
 headerTitle.textContent = 'Hello'
 headerTitle.innerText = 'Good Bye'
 
+console.log(headerTitle.innerText);
+headerTitle.innerHTML = '<h2>Hello</h2>';
+headerTitle.style.borderBottom = 'solid 3px #000';
+
+
+//get elementsbyclassname
+var items = document.getElementsByClassName('list-group-item');
+console.log(items)
+console.log(items[1])
+
+items[1].textContent = 'Hello 2';
+items[1].style.fontWeight = 'bold';
+items[1].style.backgroundColor = '#f4f4f4';
+
+//Gives Error
+
+for (var i = 0; i < items.length; i++){
+    items[i].style.backgroundColor = '#f4f4f4';
+}
+
